@@ -13,12 +13,17 @@ return require('packer').startup(function(use)
    tag = "v3.*",
    requires = 'kyazdani42/nvim-web-devicons'
   }
+  
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
       'nvim-tree/nvim-web-devicons',
     },
   }
+  use 'windwp/nvim-ts-autotag'
+  use 'p00f/nvim-ts-rainbow'
+  use 'windwp/nvim-autopairs'
+
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
   use 'folke/which-key.nvim'
