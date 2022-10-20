@@ -13,6 +13,12 @@ return require('packer').startup(function(use)
    tag = "v3.*",
    requires = 'kyazdani42/nvim-web-devicons'
   }
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+    },
+  }
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
   use 'folke/which-key.nvim'
