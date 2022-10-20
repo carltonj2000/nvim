@@ -19,10 +19,7 @@ return require('packer').startup(function(use)
   
   use {
     'nvim-tree/nvim-tree.lua',
-    requires = {
-      --'nvim-tree/nvim-web-devicons',
-      'kyazdani42/nvim-web-devicons',
-    },
+    requires = { 'kyazdani42/nvim-web-devicons' },
   }
   
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
@@ -32,7 +29,9 @@ return require('packer').startup(function(use)
 
   use 'folke/which-key.nvim'
   
-  use 'nvim-lua/plenary.nvim'
-  use 'nvim-telescope/telescope.nvim'
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
 end)
