@@ -1,5 +1,7 @@
 # NVIM Configuration
 
+Try `nvim +PackerCompile` to resolve nvim startup errors.
+  
 ## Code History
 
 The code in this repository is based on the 

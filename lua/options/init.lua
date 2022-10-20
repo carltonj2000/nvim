@@ -1,4 +1,3 @@
-vim.g.mapleader = " "
 
 vim.opt.hidden = true
 vim.opt.whichwrap = 'b,s,<,>,[,],h,l'

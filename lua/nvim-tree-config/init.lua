@@ -26,6 +26,3 @@ require('nvim-tree').setup({
   }
 })
 
-vim.cmd[[
-nnoremap <space>e :NvimTreeToggle<CR>
-]]
