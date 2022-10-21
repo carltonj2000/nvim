@@ -15,5 +15,5 @@ require('whichkey')
 
 require('telescope-config');
 
-require('cmp-config');
+require('lsp');
 
