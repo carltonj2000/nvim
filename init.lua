@@ -14,3 +14,6 @@ require('autopairs-config');
 require('whichkey')
 
 require('telescope-config');
+
+require('cmp-config');
+

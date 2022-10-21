@@ -1,6 +1,7 @@
 # NVIM Configuration
 
 Try `nvim +PackerCompile` to resolve nvim startup errors.
+Run `npm i -g vscode-langservers-extracted` to install a lsp for html/css/json/eslint.
   
 ## Code History
 
