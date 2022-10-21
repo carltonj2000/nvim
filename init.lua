@@ -17,3 +17,4 @@ require('telescope-config');
 
 require('lsp');
 
+require('colorizer-config');
