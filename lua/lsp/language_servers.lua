@@ -4,6 +4,7 @@ local langservers = {
   'cssls',
   'tsserver',
   'ls_emmet',
+  'rust_analyzer',
 }
 
 require'lspconfig.configs'.ls_emmet = {
