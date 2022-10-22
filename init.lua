@@ -19,3 +19,4 @@ require('lsp');
 
 require('colorizer-config');
 require('blankline-config');
+require('format-config');
