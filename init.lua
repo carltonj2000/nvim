@@ -1,22 +1,23 @@
-require('options');
-require('keybindings');
+require("options")
+require("keybindings")
 
-require('plugins');
-vim.cmd[[colorscheme tokyonight]]
+require("plugins")
+vim.cmd([[colorscheme tokyonight]])
 
-require('lualine-config');
-require('bufferline-config');
+require("lualine-config")
+require("bufferline-config")
 
-require('nvim-tree-config');
-require('treesitter-config');
-require('autopairs-config');
+require("nvim-tree-config")
+require("treesitter-config")
+require("autopairs-config")
 
-require('whichkey')
+require("whichkey")
 
-require('telescope-config');
+require("telescope-config")
 
-require('lsp');
+require("lsp")
 
-require('colorizer-config');
-require('blankline-config');
-require('format-config');
+require("colorizer-config")
+require("blankline-config")
+require("format-config")
+require("toggleterm-config")
