@@ -28,8 +28,8 @@ local mappings = {
 		N = { "<cmd>Lspsaga diagnostic_jump_prev<cr>", "Go To Previous Diagnostic" },
 	},
 	t = {
-		h = { ":ToggleTerm<cr>", "Split Horizontal" },
-		v = { ':ToggleTerm direction=verticle<cr>', "Split Verticle" },
+		h = { ":ToggleTerm size=12<cr>", "Split Horizontal" },
+		v = { ":ToggleTerm direction=vertical size=80<cr>", "Split Verticle" },
 		f = { toggle_float, "Floating Terminal" },
 	},
 }
