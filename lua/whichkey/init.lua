@@ -1,4 +1,15 @@
 local wk = require("which-key")
+
+local Terminal = require('toggleterm.terminal').Terminal
+local toggle_float = function()
+  local float = Terminal:new({ direction = "float" })
+  return float:toggle()
+end
+local toggle_lazygit = function()
+  local lazygit = Terminal:new({ cmd = 'lazygit', direction = "float" })
+  return lazygit:toggle()
+end
+
 local mappings = {
 	q = { ":q<CR>", "Quit" },
 	Q = { ":wq<CR>", "Save And Quit" },
@@ -28,9 +39,11 @@ local mappings = {
 		N = { "<cmd>Lspsaga diagnostic_jump_prev<cr>", "Go To Previous Diagnostic" },
 	},
 	t = {
+    name = "Terminal",
 		h = { ":ToggleTerm size=12<cr>", "Split Horizontal" },
 		v = { ":ToggleTerm direction=vertical size=80<cr>", "Split Verticle" },
 		f = { toggle_float, "Floating Terminal" },
+		l = { toggle_lazygit, "LazyGit" },
 	},
 }
 local opts = {
