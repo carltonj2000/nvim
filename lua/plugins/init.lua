@@ -61,4 +61,5 @@ return require("packer").startup(function(use)
 	use("mhartington/formatter.nvim")
 
 	use("akinsho/toggleterm.nvim")
+	use("terrortylor/nvim-comment")
 end)

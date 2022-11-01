@@ -11,7 +11,7 @@ local toggle_lazygit = function()
 end
 
 local mappings = {
-	q = { ":q<CR>", "Quit" },
+	q = { ":qa<CR>", "Quit All" },
 	Q = { ":wq<CR>", "Save And Quit" },
 	w = { ":w<CR>", "Save" },
 	x = { ":bdelete<CR>", "Close Buffer" },
