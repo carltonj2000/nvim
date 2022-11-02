@@ -73,16 +73,16 @@ return require("packer").startup(function(use)
 	})
 
 	use({ "neovim/nvim-lspconfig", config = "require('lsp')" })
-	use({ "hrsh7th/cmp-nvim-lsp"})
-	use({ "hrsh7th/cmp-buffer"})
-	use({ "hrsh7th/cmp-path"})
-	use({ "hrsh7th/cmp-cmdline"})
-	use({ "hrsh7th/nvim-cmp"})
-	use({ "hrsh7th/vim-vsnip"})
-	use({ "onsails/lspkind.nvim"})
+	use({ "hrsh7th/cmp-nvim-lsp" })
+	use({ "hrsh7th/cmp-buffer" })
+	use({ "hrsh7th/cmp-path" })
+	use({ "hrsh7th/cmp-cmdline" })
+	use({ "hrsh7th/nvim-cmp" })
+	use({ "hrsh7th/vim-vsnip" })
+	use({ "onsails/lspkind.nvim" })
 	-- sinppet install
 	use("L3MON4D3/LuaSnip")
-	use({"saadparwaiz1/cmp_luasnip" })
+	use({ "saadparwaiz1/cmp_luasnip" })
 	use("rafamadriz/friendly-snippets")
 
 	use({
@@ -101,24 +101,23 @@ return require("packer").startup(function(use)
 	})
 
 	use({
-    "lukas-reineke/indent-blankline.nvim",
-    config = "require('blankline-config')",
-    event = "BufRead"
-  })
+		"lukas-reineke/indent-blankline.nvim",
+		config = "require('blankline-config')",
+		event = "BufRead",
+	})
 	--use "lukas-reineke/lsp-format.nvim"
 	use({
-    "mhartington/formatter.nvim",
-    config = "require('format-config')",
-    cmd = "Format"
-  })
+		"mhartington/formatter.nvim",
+		config = "require('format-config')",
+	})
 
 	use({
-    "akinsho/toggleterm.nvim",
-    config = "require('toggleterm-config')",
-  })
+		"akinsho/toggleterm.nvim",
+		config = "require('toggleterm-config')",
+	})
 	use({
-    "terrortylor/nvim-comment",
-    config = "require('comment-config')",
-    cmd = "CommentToggle"
-  })
+		"terrortylor/nvim-comment",
+		config = "require('comment-config')",
+		cmd = "CommentToggle",
+	})
 end)
