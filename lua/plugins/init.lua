@@ -72,22 +72,17 @@ return require("packer").startup(function(use)
 		config = "require('telescope-config')",
 	})
 
-	use({
-    "neovim/nvim-lspconfig",
-    config = "require('lsp')",
-    after = "nvim-cmp",
-  })
-
-	use({ "hrsh7th/cmp-nvim-lsp", after = "nvim-cmp" })
-	use({ "hrsh7th/cmp-buffer", after = "nvim-cmp" })
-	use({ "hrsh7th/cmp-path", after = "nvim-cmp" })
-	use({ "hrsh7th/cmp-cmdline", after = "nvim-cmp" })
-	use({ "hrsh7th/nvim-cmp", event = "InsertEnter" })
-	use({ "hrsh7th/vim-vsnip", after = "nvim-cmp" })
-	use({ "onsails/lspkind.nvim", event = "BufRead" })
+	use({ "neovim/nvim-lspconfig", config = "require('lsp')" })
+	use({ "hrsh7th/cmp-nvim-lsp"})
+	use({ "hrsh7th/cmp-buffer"})
+	use({ "hrsh7th/cmp-path"})
+	use({ "hrsh7th/cmp-cmdline"})
+	use({ "hrsh7th/nvim-cmp"})
+	use({ "hrsh7th/vim-vsnip"})
+	use({ "onsails/lspkind.nvim"})
 	-- sinppet install
 	use("L3MON4D3/LuaSnip")
-	use({"saadparwaiz1/cmp_luasnip", after = "nvim-cmp" })
+	use({"saadparwaiz1/cmp_luasnip" })
 	use("rafamadriz/friendly-snippets")
 
 	use({
