@@ -72,6 +72,10 @@ return require("packer").startup(function(use)
 		config = "require('telescope-config')",
 	})
 
+	use({
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+	})
 	use({ "neovim/nvim-lspconfig", config = "require('lsp')" })
 	use({ "hrsh7th/cmp-nvim-lsp" })
 	use({ "hrsh7th/cmp-buffer" })
@@ -105,10 +109,9 @@ return require("packer").startup(function(use)
 		config = "require('blankline-config')",
 		event = "BufRead",
 	})
-	--use "lukas-reineke/lsp-format.nvim"
 	use({
-		"mhartington/formatter.nvim",
-		config = "require('format-config')",
+		"jose-elias-alvarez/null-ls.nvim",
+		config = "require('null-ls-config')",
 	})
 
 	use({
